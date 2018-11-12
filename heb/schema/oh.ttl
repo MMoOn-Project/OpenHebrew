@@ -780,6 +780,63 @@ heb_schema:Barkali_pulel_1 rdf:type heb_schema:Binyan ,
                                       "פועלל"@he .
 
 
+<http://mmoon.org/lang/heb/schema/oh/hif%27il> rdf:type heb_schema:Binyan ,
+                                    owl:NamedIndividual ;
+                                    rdfs:label "Hif'il"@en ,
+                                               "הִפְעִיל"@he ,
+                                               "הפעיל"@he .
+
+<http://mmoon.org/lang/heb/schema/oh/hitpa%27el> rdf:type heb_schema:Binyan ,
+                                    owl:NamedIndividual ;
+                                    rdfs:label "Hitpa'el"@en ,
+                                               "הִתְפַּעֵל"@he ,
+                                               "התפעל"@he .
+
+<http://mmoon.org/lang/heb/schema/oh/huf%27al> rdf:type heb_schema:Binyan ,
+                                    owl:NamedIndividual ;
+                                    rdfs:label "Huf'al"@en ,
+                                               "הֻפְעַל"@he ,
+                                               "הופעל"@he .
+
+<http://mmoon.org/lang/heb/schema/oh/nif%27al> rdf:type heb_schema:Binyan ,
+                                    owl:NamedIndividual ;
+                                    rdfs:label "Nif'al"@en ,
+                                               "נִפְעַל"@he ,
+                                               "נפעל"@he .
+
+<http://mmoon.org/lang/heb/schema/oh/pa%27al> rdf:type heb_schema:Binyan ,
+                                    owl:NamedIndividual ;
+                                    rdfs:label "Pa'al "@en ,
+                                               "פָּעַל"@he ,
+                                               "פעל"@he .
+
+<http://mmoon.org/lang/heb/schema/oh/pa%27lel> rdf:type heb_schema:Binyan ,
+                                    owl:NamedIndividual ;
+                                    rdfs:label "Pa'lel"@en ,
+                                               "פעלל"@he .
+
+<http://mmoon.org/lang/heb/schema/oh/pi%27el> rdf:type heb_schema:Binyan ,
+                                    owl:NamedIndividual ;
+                                    rdfs:label "Pi'el"@en ,
+                                               "פִּעֵל"@he ,
+                                               "פיעל"@he .
+
+<http://mmoon.org/lang/heb/schema/oh/polel> rdf:type heb_schema:Binyan ,
+                                    owl:NamedIndividual ;
+                                    rdfs:label "Polel"@en ,
+                                               "פולל"@he .
+
+<http://mmoon.org/lang/heb/schema/oh/pu%27al> rdf:type heb_schema:Binyan ,
+                                    owl:NamedIndividual ;
+                                    rdfs:label "Pu'al"@en ,
+                                               "פֻּעַל"@he ,
+                                               "פועל"@he .
+
+<http://mmoon.org/lang/heb/schema/oh/pu%27lel> rdf:type heb_schema:Binyan ,
+                                    owl:NamedIndividual ;
+                                    rdfs:label "Pu'lel"@en ,
+                                               "פועלל"@he .
+
 
 
 ###  http://mmoon.org/lang/heb/schema/oh/Common
