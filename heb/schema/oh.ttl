@@ -9,11 +9,11 @@
 @base <http://mmoon.org/lang/heb/schema/oh/> .
 
 <http://mmoon.org/lang/heb/schema/oh/> rdf:type owl:Ontology ;
-                                       
+
                                        rdfs:comment """This is the schema ontology for the Open Hebrew Morpheme Inventory, built by using the MMoOn core ontology, version 0.1, 2015
 
 The vocabulary provided describes the morphological elements of Hebrew, including words, morphs, roots and vowel patterns as well as their underlying meanings, representations and relations."""@en ;
-                                       
+
                                        owl:imports mmoon: .
 
 
@@ -27,11 +27,11 @@ The vocabulary provided describes the morphological elements of Hebrew, includin
 ###  http://mmoon.org/lang/heb/schema/oh/unvocalizedRepresentation
 
 heb_schema:unvocalizedRepresentation rdf:type owl:DatatypeProperty ;
-                                     
+
                                      rdfs:domain heb_schema:Representation ;
-                                     
+
                                      rdfs:subPropertyOf mmoon:orthographicRepresentation ;
-                                     
+
                                      rdfs:range xsd:string .
 
 
@@ -39,11 +39,11 @@ heb_schema:unvocalizedRepresentation rdf:type owl:DatatypeProperty ;
 ###  http://mmoon.org/lang/heb/schema/oh/vocalizedRepresentation
 
 heb_schema:vocalizedRepresentation rdf:type owl:DatatypeProperty ;
-                                   
+
                                    rdfs:domain heb_schema:Representation ;
-                                   
+
                                    rdfs:subPropertyOf mmoon:orthographicRepresentation ;
-                                   
+
                                    rdfs:range xsd:string .
 
 
@@ -60,9 +60,9 @@ heb_schema:vocalizedRepresentation rdf:type owl:DatatypeProperty ;
 ###  http://mmoon.org/lang/heb/schema/oh/Affix
 
 heb_schema:Affix rdf:type owl:Class ;
-                 
+
                  rdfs:label "Affix"@en ;
-                 
+
                  rdfs:subClassOf heb_schema:Morph ,
                                  mmoon:Affix .
 
@@ -71,9 +71,9 @@ heb_schema:Affix rdf:type owl:Class ;
 ###  http://mmoon.org/lang/heb/schema/oh/AnalyticWordform
 
 heb_schema:AnalyticWordform rdf:type owl:Class ;
-                            
+
                             rdfs:label "Analytic Wordform"@en ;
-                            
+
                             rdfs:subClassOf heb_schema:Wordform ,
                                             mmoon:AnalyticWordform .
 
@@ -82,9 +82,9 @@ heb_schema:AnalyticWordform rdf:type owl:Class ;
 ###  http://mmoon.org/lang/heb/schema/oh/AtomicMorpheme
 
 heb_schema:AtomicMorpheme rdf:type owl:Class ;
-                          
+
                           rdfs:label "Atomic Morpheme"@en ;
-                          
+
                           rdfs:subClassOf heb_schema:Morpheme ,
                                           mmoon:AtomicMorpheme .
 
@@ -93,10 +93,10 @@ heb_schema:AtomicMorpheme rdf:type owl:Class ;
 ###  http://mmoon.org/lang/heb/schema/oh/Binyan
 
 heb_schema:Binyan rdf:type owl:Class ;
-                  
+
                   rdfs:label "Binyan"@en ,
                              "בִּנְיָנִים"@he ;
-                  
+
                   rdfs:subClassOf mmoon:Introflection .
 
 
@@ -104,9 +104,9 @@ heb_schema:Binyan rdf:type owl:Class ;
 ###  http://mmoon.org/lang/heb/schema/oh/ComplexMorpheme
 
 heb_schema:ComplexMorpheme rdf:type owl:Class ;
-                           
+
                            rdfs:label "Complex Morpheme"@en ;
-                           
+
                            rdfs:subClassOf heb_schema:Morpheme ,
                                            mmoon:ComplexMorpheme .
 
@@ -115,9 +115,9 @@ heb_schema:ComplexMorpheme rdf:type owl:Class ;
 ###  http://mmoon.org/lang/heb/schema/oh/CompoundWord
 
 heb_schema:CompoundWord rdf:type owl:Class ;
-                        
+
                         rdfs:label "Compound Word"@en ;
-                        
+
                         rdfs:subClassOf heb_schema:Lexeme ,
                                         mmoon:CompoundWord .
 
@@ -126,9 +126,9 @@ heb_schema:CompoundWord rdf:type owl:Class ;
 ###  http://mmoon.org/lang/heb/schema/oh/DerivedWord
 
 heb_schema:DerivedWord rdf:type owl:Class ;
-                       
+
                        rdfs:label "Derived Word"@en ;
-                       
+
                        rdfs:subClassOf heb_schema:Lexeme ,
                                        mmoon:DerivedWord .
 
@@ -137,9 +137,9 @@ heb_schema:DerivedWord rdf:type owl:Class ;
 ###  http://mmoon.org/lang/heb/schema/oh/EmptyMorpheme
 
 heb_schema:EmptyMorpheme rdf:type owl:Class ;
-                         
+
                          rdfs:label "Empty Morpheme"@en ;
-                         
+
                          rdfs:subClassOf heb_schema:Morpheme ,
                                          mmoon:EmptyMorpheme .
 
@@ -148,9 +148,9 @@ heb_schema:EmptyMorpheme rdf:type owl:Class ;
 ###  http://mmoon.org/lang/heb/schema/oh/FusionalMorpheme
 
 heb_schema:FusionalMorpheme rdf:type owl:Class ;
-                            
+
                             rdfs:label "Fusional Morpheme"@en ;
-                            
+
                             rdfs:subClassOf heb_schema:Morpheme ,
                                             mmoon:FusionalMorpheme .
 
@@ -159,9 +159,9 @@ heb_schema:FusionalMorpheme rdf:type owl:Class ;
 ###  http://mmoon.org/lang/heb/schema/oh/GrammaticalWord
 
 heb_schema:GrammaticalWord rdf:type owl:Class ;
-                           
+
                            rdfs:label "Grammatical Word"@en ;
-                           
+
                            rdfs:subClassOf heb_schema:Word ,
                                            mmoon:GrammaticalWord .
 
@@ -170,9 +170,9 @@ heb_schema:GrammaticalWord rdf:type owl:Class ;
 ###  http://mmoon.org/lang/heb/schema/oh/Lexeme
 
 heb_schema:Lexeme rdf:type owl:Class ;
-                  
+
                   rdfs:label "Lexeme"@en ;
-                  
+
                   rdfs:subClassOf heb_schema:Word ,
                                   mmoon:Lexeme .
 
@@ -181,9 +181,9 @@ heb_schema:Lexeme rdf:type owl:Class ;
 ###  http://mmoon.org/lang/heb/schema/oh/Mishkal
 
 heb_schema:Mishkal rdf:type owl:Class ;
-                   
+
                    rdfs:label "Mishkal"@en ;
-                   
+
                    rdfs:subClassOf mmoon:Introflection .
 
 
@@ -191,9 +191,9 @@ heb_schema:Mishkal rdf:type owl:Class ;
 ###  http://mmoon.org/lang/heb/schema/oh/Morph
 
 heb_schema:Morph rdf:type owl:Class ;
-                 
+
                  rdfs:label "Morph"@en ;
-                 
+
                  rdfs:subClassOf mmoon:Morph .
 
 
@@ -201,10 +201,10 @@ heb_schema:Morph rdf:type owl:Class ;
 ###  http://mmoon.org/lang/heb/schema/oh/Morpheme
 
 heb_schema:Morpheme rdf:type owl:Class ;
-                    
+
                     rdfs:label "Fusional Morpheme"@en ,
                                "Morpheme"@en ;
-                    
+
                     rdfs:subClassOf mmoon:Morpheme .
 
 
@@ -212,9 +212,9 @@ heb_schema:Morpheme rdf:type owl:Class ;
 ###  http://mmoon.org/lang/heb/schema/oh/NoInflection
 
 heb_schema:NoInflection rdf:type owl:Class ;
-                        
+
                         rdfs:label "No inflection"@en ;
-                        
+
                         rdfs:subClassOf mmoon:NoInflection .
 
 
@@ -222,9 +222,9 @@ heb_schema:NoInflection rdf:type owl:Class ;
 ###  http://mmoon.org/lang/heb/schema/oh/Prefix
 
 heb_schema:Prefix rdf:type owl:Class ;
-                  
+
                   rdfs:label "Prefix"@en ;
-                  
+
                   rdfs:subClassOf heb_schema:Affix ,
                                   mmoon:Prefix .
 
@@ -233,9 +233,9 @@ heb_schema:Prefix rdf:type owl:Class ;
 ###  http://mmoon.org/lang/heb/schema/oh/PrimaryRoot
 
 heb_schema:PrimaryRoot rdf:type owl:Class ;
-                       
+
                        rdfs:label "Primary Root"@en ;
-                       
+
                        rdfs:subClassOf heb_schema:Root .
 
 
@@ -243,9 +243,9 @@ heb_schema:PrimaryRoot rdf:type owl:Class ;
 ###  http://mmoon.org/lang/heb/schema/oh/Representation
 
 heb_schema:Representation rdf:type owl:Class ;
-                          
+
                           rdfs:label "Representation"@en ;
-                          
+
                           rdfs:subClassOf mmoon:Representation .
 
 
@@ -253,10 +253,10 @@ heb_schema:Representation rdf:type owl:Class ;
 ###  http://mmoon.org/lang/heb/schema/oh/Root
 
 heb_schema:Root rdf:type owl:Class ;
-                
+
                 rdfs:label "Root"@en ,
                            "שורש"@he ;
-                
+
                 rdfs:subClassOf heb_schema:Morph ,
                                 mmoon:Root .
 
@@ -265,9 +265,9 @@ heb_schema:Root rdf:type owl:Class ;
 ###  http://mmoon.org/lang/heb/schema/oh/SecondaryRoot
 
 heb_schema:SecondaryRoot rdf:type owl:Class ;
-                         
+
                          rdfs:label "Secondary Root"@en ;
-                         
+
                          rdfs:subClassOf heb_schema:Root .
 
 
@@ -275,11 +275,11 @@ heb_schema:SecondaryRoot rdf:type owl:Class ;
 ###  http://mmoon.org/lang/heb/schema/oh/Sense
 
 heb_schema:Sense rdf:type owl:Class ;
-                 
+
                  rdfs:label "Sense"@en ;
-                 
+
                  rdfs:subClassOf mmoon:Sense ;
-                 
+
                  mmoon:usageNote "The senses which are currently contained are German, Englisch and Russian translations of the respective Hebrew lexemes."@en .
 
 
@@ -287,9 +287,9 @@ heb_schema:Sense rdf:type owl:Class ;
 ###  http://mmoon.org/lang/heb/schema/oh/Stem
 
 heb_schema:Stem rdf:type owl:Class ;
-                
+
                 rdfs:label "Stem"@en ;
-                
+
                 rdfs:subClassOf heb_schema:Morph ,
                                 mmoon:Stem .
 
@@ -298,9 +298,9 @@ heb_schema:Stem rdf:type owl:Class ;
 ###  http://mmoon.org/lang/heb/schema/oh/Suffix
 
 heb_schema:Suffix rdf:type owl:Class ;
-                  
+
                   rdfs:label "Suffix"@en ;
-                  
+
                   rdfs:subClassOf heb_schema:Affix ,
                                   mmoon:Suffix .
 
@@ -309,9 +309,9 @@ heb_schema:Suffix rdf:type owl:Class ;
 ###  http://mmoon.org/lang/heb/schema/oh/SyntheticWordform
 
 heb_schema:SyntheticWordform rdf:type owl:Class ;
-                             
+
                              rdfs:label "Synthetic Wordform"@en ;
-                             
+
                              rdfs:subClassOf heb_schema:Wordform ,
                                              mmoon:SyntheticWordform .
 
@@ -320,9 +320,9 @@ heb_schema:SyntheticWordform rdf:type owl:Class ;
 ###  http://mmoon.org/lang/heb/schema/oh/Transfix
 
 heb_schema:Transfix rdf:type owl:Class ;
-                    
+
                     rdfs:label "Transfix"@en ;
-                    
+
                     rdfs:subClassOf heb_schema:Affix ,
                                     mmoon:Transfix .
 
@@ -331,9 +331,9 @@ heb_schema:Transfix rdf:type owl:Class ;
 ###  http://mmoon.org/lang/heb/schema/oh/Word
 
 heb_schema:Word rdf:type owl:Class ;
-                
+
                 rdfs:label "Word" ;
-                
+
                 rdfs:subClassOf mmoon:Word .
 
 
@@ -341,10 +341,10 @@ heb_schema:Word rdf:type owl:Class ;
 ###  http://mmoon.org/lang/heb/schema/oh/Wordform
 
 heb_schema:Wordform rdf:type owl:Class ;
-                    
+
                     rdfs:label "Wordform"@en ,
                                "צורה"@he ;
-                    
+
                     rdfs:subClassOf heb_schema:Word ,
                                     mmoon:Wordform .
 
@@ -597,7 +597,7 @@ mmoon:Wordform rdf:type owl:Class .
 
 heb_schema:Active rdf:type mmoon:Active ,
                            owl:NamedIndividual ;
-                  
+
                   rdfs:label "Active"@en ,
                              "בניין"@he .
 
@@ -607,7 +607,7 @@ heb_schema:Active rdf:type mmoon:Active ,
 
 heb_schema:Adjective rdf:type mmoon:Adjective ,
                               owl:NamedIndividual ;
-                     
+
                      rdfs:label "Adjective"@en ,
                                 "שם תואר"@he .
 
@@ -617,7 +617,7 @@ heb_schema:Adjective rdf:type mmoon:Adjective ,
 
 heb_schema:Adjectivization rdf:type mmoon:Adjectivization ,
                                     owl:NamedIndividual ;
-                           
+
                            rdfs:label "Adjectivization"@en .
 
 
@@ -633,7 +633,7 @@ heb_schema:Adverb rdf:type mmoon:Adverb ,
 
 heb_schema:AgentNominalizer rdf:type mmoon:AgentNominalizer ,
                                      owl:NamedIndividual ;
-                            
+
                             rdfs:label "Agent nominalizer"@en .
 
 
@@ -642,7 +642,7 @@ heb_schema:AgentNominalizer rdf:type mmoon:AgentNominalizer ,
 
 heb_schema:Barkali_Mishkal_118 rdf:type heb_schema:Mishkal ,
                                         owl:NamedIndividual ;
-                               
+
                                rdfs:label "Barkali Mishkal 118"@en .
 
 
@@ -651,7 +651,7 @@ heb_schema:Barkali_Mishkal_118 rdf:type heb_schema:Mishkal ,
 
 heb_schema:Barkali_Mishkal_144 rdf:type heb_schema:Mishkal ,
                                         owl:NamedIndividual ;
-                               
+
                                rdfs:label "Barkali Mishkal 144"@en .
 
 
@@ -660,7 +660,7 @@ heb_schema:Barkali_Mishkal_144 rdf:type heb_schema:Mishkal ,
 
 heb_schema:Barkali_Mishkal_274 rdf:type heb_schema:Mishkal ,
                                         owl:NamedIndividual ;
-                               
+
                                rdfs:label "Barkali Mishkal 274"@en .
 
 
@@ -669,7 +669,7 @@ heb_schema:Barkali_Mishkal_274 rdf:type heb_schema:Mishkal ,
 
 heb_schema:Barkali_Mishkal_91 rdf:type heb_schema:Mishkal ,
                                        owl:NamedIndividual ;
-                              
+
                               rdfs:label "Barkali Mishkal 91"@en .
 
 
@@ -678,7 +678,7 @@ heb_schema:Barkali_Mishkal_91 rdf:type heb_schema:Mishkal ,
 
 heb_schema:Barkali_hifil_1 rdf:type heb_schema:Binyan ,
                                     owl:NamedIndividual ;
-                           
+
                            rdfs:label "Barkali Hif'il 1"@en ,
                                       "הִפְעִיל"@he ,
                                       "הפעיל"@he .
@@ -689,7 +689,7 @@ heb_schema:Barkali_hifil_1 rdf:type heb_schema:Binyan ,
 
 heb_schema:Barkali_hitpael_1 rdf:type heb_schema:Binyan ,
                                       owl:NamedIndividual ;
-                             
+
                              rdfs:label "Barkali Hitpa'el 1"@en ,
                                         "הִתְפַּעֵל"@he ,
                                         "התפעל"@he .
@@ -700,7 +700,7 @@ heb_schema:Barkali_hitpael_1 rdf:type heb_schema:Binyan ,
 
 heb_schema:Barkali_hufal_1 rdf:type heb_schema:Binyan ,
                                     owl:NamedIndividual ;
-                           
+
                            rdfs:label "Barkali Huf'al 1"@en ,
                                       "הֻפְעַל"@he ,
                                       "הופעל"@he .
@@ -711,7 +711,7 @@ heb_schema:Barkali_hufal_1 rdf:type heb_schema:Binyan ,
 
 heb_schema:Barkali_nifal_1 rdf:type heb_schema:Binyan ,
                                     owl:NamedIndividual ;
-                           
+
                            rdfs:label "Barkali Nif'al 1"@en ,
                                       "נִפְעַל"@he ,
                                       "נפעל"@he .
@@ -722,7 +722,7 @@ heb_schema:Barkali_nifal_1 rdf:type heb_schema:Binyan ,
 
 heb_schema:Barkali_paal_1 rdf:type heb_schema:Binyan ,
                                    owl:NamedIndividual ;
-                          
+
                           rdfs:label "Barkali Pa'al 1"@en ,
                                      "פָּעַל"@he ,
                                      "פעל"@he .
@@ -733,7 +733,7 @@ heb_schema:Barkali_paal_1 rdf:type heb_schema:Binyan ,
 
 heb_schema:Barkali_palel_1 rdf:type heb_schema:Binyan ,
                                     owl:NamedIndividual ;
-                           
+
                            rdfs:label "Barkali Pa'lel 1"@en ,
                                       "פעלל"@he .
 
@@ -743,7 +743,7 @@ heb_schema:Barkali_palel_1 rdf:type heb_schema:Binyan ,
 
 heb_schema:Barkali_piel_1 rdf:type heb_schema:Binyan ,
                                    owl:NamedIndividual ;
-                          
+
                           rdfs:label "Barkali Pi'el 1"@en ,
                                      "פִּעֵל"@he ,
                                      "פיעל"@he .
@@ -754,7 +754,7 @@ heb_schema:Barkali_piel_1 rdf:type heb_schema:Binyan ,
 
 heb_schema:Barkali_polel_1 rdf:type heb_schema:Binyan ,
                                     owl:NamedIndividual ;
-                           
+
                            rdfs:label "Barkali Polel 1"@en ,
                                       "פולל"@he .
 
@@ -764,7 +764,7 @@ heb_schema:Barkali_polel_1 rdf:type heb_schema:Binyan ,
 
 heb_schema:Barkali_pual_1 rdf:type heb_schema:Binyan ,
                                    owl:NamedIndividual ;
-                          
+
                           rdfs:label "Barkali Pu'al 1"@en ,
                                      "פֻּעַל"@he ,
                                      "פועל"@he .
@@ -775,9 +775,67 @@ heb_schema:Barkali_pual_1 rdf:type heb_schema:Binyan ,
 
 heb_schema:Barkali_pulel_1 rdf:type heb_schema:Binyan ,
                                     owl:NamedIndividual ;
-                           
+
                            rdfs:label "Barkali Pu'lel 1"@en ,
                                       "פועלל"@he .
+
+
+<http://mmoon.org/lang/heb/schema/oh/hif%27il> rdf:type heb_schema:Binyan ,
+                                    owl:NamedIndividual ;
+                                    rdfs:label "Hif'il"@en ,
+                                               "הִפְעִיל"@he ,
+                                               "הפעיל"@he .
+
+<http://mmoon.org/lang/heb/schema/oh/hitpa%27el> rdf:type heb_schema:Binyan ,
+                                    owl:NamedIndividual ;
+                                    rdfs:label "Hitpa'el"@en ,
+                                               "הִתְפַּעֵל"@he ,
+                                               "התפעל"@he .
+
+<http://mmoon.org/lang/heb/schema/oh/huf%27al> rdf:type heb_schema:Binyan ,
+                                    owl:NamedIndividual ;
+                                    rdfs:label "Huf'al"@en ,
+                                               "הֻפְעַל"@he ,
+                                               "הופעל"@he .
+
+<http://mmoon.org/lang/heb/schema/oh/nif%27al> rdf:type heb_schema:Binyan ,
+                                    owl:NamedIndividual ;
+                                    rdfs:label "Nif'al"@en ,
+                                               "נִפְעַל"@he ,
+                                               "נפעל"@he .
+
+<http://mmoon.org/lang/heb/schema/oh/pa%27al> rdf:type heb_schema:Binyan ,
+                                    owl:NamedIndividual ;
+                                    rdfs:label "Pa'al "@en ,
+                                               "פָּעַל"@he ,
+                                               "פעל"@he .
+
+<http://mmoon.org/lang/heb/schema/oh/pa%27lel> rdf:type heb_schema:Binyan ,
+                                    owl:NamedIndividual ;
+                                    rdfs:label "Pa'lel"@en ,
+                                               "פעלל"@he .
+
+<http://mmoon.org/lang/heb/schema/oh/pi%27el> rdf:type heb_schema:Binyan ,
+                                    owl:NamedIndividual ;
+                                    rdfs:label "Pi'el"@en ,
+                                               "פִּעֵל"@he ,
+                                               "פיעל"@he .
+
+<http://mmoon.org/lang/heb/schema/oh/polel> rdf:type heb_schema:Binyan ,
+                                    owl:NamedIndividual ;
+                                    rdfs:label "Polel"@en ,
+                                               "פולל"@he .
+
+<http://mmoon.org/lang/heb/schema/oh/pu%27al> rdf:type heb_schema:Binyan ,
+                                    owl:NamedIndividual ;
+                                    rdfs:label "Pu'al"@en ,
+                                               "פֻּעַל"@he ,
+                                               "פועל"@he .
+
+<http://mmoon.org/lang/heb/schema/oh/pu%27lel> rdf:type heb_schema:Binyan ,
+                                    owl:NamedIndividual ;
+                                    rdfs:label "Pu'lel"@en ,
+                                               "פועלל"@he .
 
 
 
@@ -785,7 +843,7 @@ heb_schema:Barkali_pulel_1 rdf:type heb_schema:Binyan ,
 
 heb_schema:Common rdf:type mmoon:Common ,
                            owl:NamedIndividual ;
-                  
+
                   rdfs:label "Common"@en .
 
 
@@ -794,7 +852,7 @@ heb_schema:Common rdf:type mmoon:Common ,
 
 heb_schema:CommonNoun rdf:type mmoon:CommonNoun ,
                                owl:NamedIndividual ;
-                      
+
                       rdfs:label "Common noun"@en ,
                                  "שם עצם"@he .
 
@@ -811,7 +869,7 @@ heb_schema:Dual rdf:type mmoon:Dual ,
 
 heb_schema:Feminine rdf:type mmoon:Feminine ,
                              owl:NamedIndividual ;
-                    
+
                     rdfs:label "Feminine"@en ,
                                "נקבה"@he .
 
@@ -821,7 +879,7 @@ heb_schema:Feminine rdf:type mmoon:Feminine ,
 
 heb_schema:FirstPerson rdf:type mmoon:FirstPerson ,
                                 owl:NamedIndividual ;
-                       
+
                        rdfs:label "First person"@en ,
                                   "גזרה"@he .
 
@@ -831,7 +889,7 @@ heb_schema:FirstPerson rdf:type mmoon:FirstPerson ,
 
 heb_schema:Future rdf:type mmoon:Future ,
                            owl:NamedIndividual ;
-                  
+
                   rdfs:label "Future"@en ,
                              "עתיד"@he .
 
@@ -841,7 +899,7 @@ heb_schema:Future rdf:type mmoon:Future ,
 
 heb_schema:Imperative rdf:type mmoon:Imperative ,
                                owl:NamedIndividual ;
-                      
+
                       rdfs:label "Imperative"@en ,
                                  "ציווי"@he .
 
@@ -851,7 +909,7 @@ heb_schema:Imperative rdf:type mmoon:Imperative ,
 
 heb_schema:Intensification rdf:type mmoon:Intensification ,
                                     owl:NamedIndividual ;
-                           
+
                            rdfs:label "Intensification"@en .
 
 
@@ -860,7 +918,7 @@ heb_schema:Intensification rdf:type mmoon:Intensification ,
 
 heb_schema:Masculine rdf:type mmoon:Masculine ,
                               owl:NamedIndividual ;
-                     
+
                      rdfs:label "Masculine"@en ,
                                 "זכר"@he .
 
@@ -870,9 +928,9 @@ heb_schema:Masculine rdf:type mmoon:Masculine ,
 
 heb_schema:MorphemeInventory rdf:type mmoon:MorphemeInventory ,
                                       owl:NamedIndividual ;
-                             
+
                              rdfs:label "Morpheme inventory"@en ;
-                             
+
                              mmoon:forLanguage <http://lexvo.org/id/iso639-3/heb> .
 
 
@@ -881,7 +939,7 @@ heb_schema:MorphemeInventory rdf:type mmoon:MorphemeInventory ,
 
 heb_schema:Nominalization rdf:type mmoon:Nominalization ,
                                    owl:NamedIndividual ;
-                          
+
                           rdfs:label "Nominalization"@en .
 
 
@@ -890,7 +948,7 @@ heb_schema:Nominalization rdf:type mmoon:Nominalization ,
 
 heb_schema:Passive rdf:type mmoon:Passive ,
                             owl:NamedIndividual ;
-                   
+
                    rdfs:label "Passive"@en .
 
 
@@ -899,7 +957,7 @@ heb_schema:Passive rdf:type mmoon:Passive ,
 
 heb_schema:Past rdf:type mmoon:Past ,
                          owl:NamedIndividual ;
-                
+
                 rdfs:label "Past"@en ,
                            "עבר"@he .
 
@@ -909,7 +967,7 @@ heb_schema:Past rdf:type mmoon:Past ,
 
 heb_schema:Plural rdf:type mmoon:Plural ,
                            owl:NamedIndividual ;
-                  
+
                   rdfs:label "Plural"@en ,
                              "רבים"@he .
 
@@ -926,7 +984,7 @@ heb_schema:Preposition rdf:type mmoon:Preposition ,
 
 heb_schema:Present rdf:type mmoon:Present ,
                             owl:NamedIndividual ;
-                   
+
                    rdfs:label "Present"@en .
 
 
@@ -942,7 +1000,7 @@ heb_schema:Repetitive rdf:type mmoon:Repetitive ,
 
 heb_schema:SecondPerson rdf:type mmoon:SecondPerson ,
                                  owl:NamedIndividual ;
-                        
+
                         rdfs:label "Second person"@en ,
                                    "גוף שני"@he .
 
@@ -952,7 +1010,7 @@ heb_schema:SecondPerson rdf:type mmoon:SecondPerson ,
 
 heb_schema:Singular rdf:type mmoon:Singular ,
                              owl:NamedIndividual ;
-                    
+
                     rdfs:label "Singular"@en ,
                                "יחיד"@he .
 
@@ -962,7 +1020,7 @@ heb_schema:Singular rdf:type mmoon:Singular ,
 
 heb_schema:ThirdPerson rdf:type mmoon:ThirdPerson ,
                                 owl:NamedIndividual ;
-                       
+
                        rdfs:label "Third peson"@en ,
                                   "גוף שלישי"@he .
 
@@ -972,7 +1030,7 @@ heb_schema:ThirdPerson rdf:type mmoon:ThirdPerson ,
 
 heb_schema:Transitive rdf:type mmoon:Transitive ,
                                owl:NamedIndividual ;
-                      
+
                       rdfs:label "Transitive"@en .
 
 
@@ -981,7 +1039,7 @@ heb_schema:Transitive rdf:type mmoon:Transitive ,
 
 heb_schema:Verb rdf:type mmoon:Verb ,
                          owl:NamedIndividual ;
-                
+
                 rdfs:label "Verb"@en ,
                            "פועל"@he .
 
@@ -989,4 +1047,3 @@ heb_schema:Verb rdf:type mmoon:Verb ,
 
 
 ###  Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net
-
